@@ -1,19 +1,45 @@
-<nav class="tabs" data-group="main">
-  <a class="item" data-tab="step1">{{localize "LAZYDM.Step1"}}</a>
-  <a class="item" data-tab="step2">{{localize "LAZYDM.Step2"}}</a>
-  <a class="item" data-tab="step3">{{localize "LAZYDM.Step3"}}</a>
-  <a class="item" data-tab="step4">{{localize "LAZYDM.Step4"}}</a>
-  <a class="item" data-tab="step5">{{localize "LAZYDM.Step5"}}</a>
-  <a class="item" data-tab="step6">{{localize "LAZYDM.Step6"}}</a>
-  <a class="item" data-tab="step7">{{localize "LAZYDM.Step7"}}</a>
-  <a class="item" data-tab="step8">{{localize "LAZYDM.Step8"}}</a>
+<nav class="tabs">
+  <a class="item" data-tab="step1">1. Review Characters</a>
+  <a class="item" data-tab="step2">2. Strong Start</a>
+  <a class="item" data-tab="step3">3. Potential Scenes</a>
+  <a class="item" data-tab="step4">4. Secrets & Clues</a>
+  <a class="item" data-tab="step5">5. Fantastic Locations</a>
+  <a class="item" data-tab="step6">6. Important NPCs</a>
+  <a class="item" data-tab="step7">7. Relevant Monsters</a>
+  <a class="item" data-tab="step8">8. Rewards</a>
 </nav>
 
 <section class="content">
-  {{#each (array 1 2 3 4 5 6 7 8) as |num|}}
-    <div class="tab" data-tab="step{{num}}">
-      <h2>{{localize (concat "LAZYDM.Step" num)}}</h2>
-      <p>Content for step {{num}} will go here.</p>
-    </div>
-  {{/each}}
+  <div class="tab-panel" data-tab="step1">
+    <h2>Review Characters</h2>
+    <p>Content for step 1 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step2">
+    <h2>Strong Start</h2>
+    <p>Content for step 2 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step3">
+    <h2>Potential Scenes</h2>
+    <p>Content for step 3 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step4">
+    <h2>Secrets & Clues</h2>
+    <p>Content for step 4 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step5">
+    <h2>Fantastic Locations</h2>
+    <p>Content for step 5 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step6">
+    <h2>Important NPCs</h2>
+    <p>Content for step 6 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step7">
+    <h2>Relevant Monsters</h2>
+    <p>Content for step 7 will go here.</p>
+  </div>
+  <div class="tab-panel" data-tab="step8">
+    <h2>Rewards</h2>
+    <p>Content for step 8 will go here.</p>
+  </div>
 </section>
