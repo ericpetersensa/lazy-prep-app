@@ -2,7 +2,7 @@
   "id": "lazy-prep-app",
   "title": "Lazy Prep App - Hello World",
   "description": "Minimal Foundry VTT v13 module to prove loading works.",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "compatibility": { "minimum": "13.0.0", "verified": "13.347" },
   "authors": [{ "name": "Eric Petersen" }],
   "esmodules": ["scripts/main.js"],
