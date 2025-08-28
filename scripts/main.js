@@ -3,22 +3,26 @@ console.log("Lazy Prep App: module file loaded");
 Hooks.once("ready", () => {
   console.log("Lazy Prep App: ready hook fired");
 
-  class HelloWorldApp extends Application {
+  class LazyDMApp extends Application {
     static get defaultOptions() {
       return mergeObject(super.defaultOptions, {
-        id: "hello-world-app",
-        title: "Hello World",
-        template: "modules/lazy-prep-app/templates/hello.hbs",
-        width: 300,
-        height: 200
+        id: "lazy-dm-app",
+        title: game.i18n.localize("LAZYDM.Title"),
+        template: "modules/lazy-prep-app/templates/scaffold.hbs",
+        width: 800,
+        height: 600,
+        resizable: true,
+        tabs: [
+          { navSelector: ".tabs", contentSelector: ".content", initial: "step1" }
+        ]
       });
     }
   }
 
-  // Simple console API for testing
+  // API to open the scaffold
   game.lazyPrep = {
-    hello: () => new HelloWorldApp().render(true)
+    open: () => new LazyDMApp().render(true)
   };
 
-  ui.notifications.info("Lazy Prep App loaded — run game.lazyPrep.hello() in console");
+  ui.notifications.info("Lazy Prep App loaded — run game.lazyPrep.open() to see the scaffold");
 });
