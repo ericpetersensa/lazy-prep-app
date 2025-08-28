@@ -1,33 +1,29 @@
-/* Base layout */
-#lazy-prep-app {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Tabs */
-#lazy-prep-app .tabs {
+#lazy-prep-app-window .tabs {
   display: flex;
   gap: 0.5rem;
   padding: 0.5rem;
   border-bottom: 1px solid var(--color-border-dark-2);
 }
-#lazy-prep-app .tabs .item {
+
+#lazy-prep-app-window .tabs .item {
   padding: 0.4rem 0.8rem;
   cursor: pointer;
   border-radius: 4px 4px 0 0;
 }
-#lazy-prep-app .tabs .item.active {
+
+#lazy-prep-app-window .tabs .item.active {
   background: var(--color-border-dark-3);
   font-weight: bold;
 }
 
-/* Panels */
-#lazy-prep-app .content {
+#lazy-prep-app-window .content {
   padding: 1rem;
 }
-#lazy-prep-app .tab-panel {
+
+#lazy-prep-app-window .tab-panel {
   display: none;
 }
-#lazy-prep-app .tab-panel.active {
+
+#lazy-prep-app-window .tab-panel.active {
   display: block;
 }
