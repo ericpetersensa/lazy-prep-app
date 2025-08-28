@@ -1,0 +1,18 @@
+<nav class="tabs" data-group="main">
+  <a class="item" data-tab="step1">1. Review Characters</a>
+  <a class="item" data-tab="step2">2. Strong Start</a>
+  <a class="item" data-tab="step3">3. Potential Scenes</a>
+  <a class="item" data-tab="step4">4. Secrets & Clues</a>
+  <a class="item" data-tab="step5">5. Fantastic Locations</a>
+  <a class="item" data-tab="step6">6. Important NPCs</a>
+  <a class="item" data-tab="step7">7. Relevant Monsters</a>
+  <a class="item" data-tab="step8">8. Rewards</a>
+</nav>
+
+<section class="content">
+  {{#each (array 1 2 3 4 5 6 7 8) as |num|}}
+    <div class="tab" data-tab="step{{num}}">
+      <h2>Step {{num}} content goes here…</h2>
+    </div>
+  {{/each}}
+</section>
