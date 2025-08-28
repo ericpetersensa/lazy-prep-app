@@ -2,7 +2,7 @@
   "id": "lazy-dm-module",
   "title": "Lazy Dungeon Master Prep",
   "description": "A Foundry VTT v13 prep tool based on The Lazy Dungeon Master methodology.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": { "minimum": "13.0.0", "verified": "13.347" },
   "authors": [
     { "name": "Eric Petersen", "email": "ericpetersensa@gmail.com" }
