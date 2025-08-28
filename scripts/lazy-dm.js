@@ -1,34 +1,34 @@
-// scripts/lazy-dm.js
+console.log("Lazy DM module loading...");
+
 class LazyDMApp extends ApplicationV2 {
   static DEFAULT_OPTIONS = {
     ...super.DEFAULT_OPTIONS,
     id: "lazy-dm-app",
-    title: "Lazy DM Prep",
+    title: game.i18n.localize("LAZYDM.Title"),
     template: "modules/lazy-dm-module/templates/lazy-dm.hbs",
     classes: ["lazy-dm"],
     width: 800,
     height: 600,
     resizable: true,
-    tabs: [
-      { navSelector: ".tabs", contentSelector: ".content", initial: "step1" }
-    ]
+    tabs: [{ navSelector: ".tabs", contentSelector: ".content", initial: "step1" }]
   };
-
-  // For now, no listeners or actions — just the structure
-  _getHeaderButtons() {
-    const buttons = super._getHeaderButtons();
-    buttons.unshift({
-      label: "Settings",
-      icon: "fas fa-cog",
-      onclick: () => ui.notifications.info("Settings to be implemented.")
-    });
-    return buttons;
-  }
 }
 
-// Make it accessible via game API
-Hooks.once("ready", () => {
+// Register API early so it's always callable
+Hooks.once("init", () => {
+  console.log("Lazy DM init hook fired.");
   game.lazyDM = {
     open: () => new LazyDMApp().render(true)
   };
+});
+
+// Optional: add a Scene Controls button to launch app without console
+Hooks.on("getSceneControlButtons", controls => {
+  controls.push({
+    name: "lazy-dm",
+    title: game.i18n.localize("LAZYDM.Title"),
+    icon: "fas fa-dragon",
+    onClick: () => game.lazyDM.open(),
+    button: true
+  });
 });
