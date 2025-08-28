@@ -1,0 +1,16 @@
+.lazy-dm-app .tabs {
+  display: flex;
+  gap: 0.5em;
+  border-bottom: 1px solid var(--color-border-dark-2);
+}
+.lazy-dm-app .tabs .item {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.lazy-dm-app .tabs .item.active {
+  background: var(--color-border-dark-3);
+  font-weight: bold;
+}
+.lazy-dm-app .content {
+  padding: 1em;
+}
