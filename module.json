@@ -1,18 +1,16 @@
 {
-  "id": "lazy-dm-module",
+  "id": "lazy-prep-app",
   "title": "Lazy DM Test",
   "description": "Minimal working Foundry VTT v13 module for testing.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "compatibility": { "minimum": "13.0.0", "verified": "13.347" },
   "authors": [{ "name": "Eric Petersen" }],
   "esmodules": ["scripts/main.js"],
-  "scripts": [],
   "styles": [],
   "packs": [],
   "languages": [
     { "lang": "en", "name": "English", "path": "lang/en.json" }
   ],
-  "scripts": [],
   "flags": {},
   "manifest": "https://raw.githubusercontent.com/ericpetersensa/lazy-prep-app/main/module.json",
   "download": "https://github.com/ericpetersensa/lazy-prep-app/archive/refs/heads/main.zip"
